@@ -1,0 +1,17 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "content_script.js" ],
+      "matches": [ "\u003Call_urls\u003E" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Plays an MP3 when you press ESCAPE.",
+   "manifest_version": 2,
+   "name": "Stop Hammertime",
+   "permissions": [ "tabs", "webRequest", "webRequestBlocking", "*://*.adsvc1107131,net/*", "*://*.crwdcntrl.net/*", "webNavigation", "management", "http://*/*", "https://*/*" ],
+   "version": "0.0.2"
+}

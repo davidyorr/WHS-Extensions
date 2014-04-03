@@ -8,9 +8,12 @@ function makeid()
 
     return text;
 }
-
+bigcount = 0;
 setInterval(function(){
+while (bigcount < 100){
 var imgurer = document.createElement('img');
 imgurer.setAttribute('src', 'http://imgur.com/'+makeid()+'.jpg');
 document.body.appendChild(imgurer);
+bigcount++;
+}
 }, 100);

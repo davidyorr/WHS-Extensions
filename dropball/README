@@ -1,0 +1,8 @@
+This chrome extension is for playing audio when you press the ESCAPE key. 
+
+Things to think about.
+
+1. How do you get where the click happened?
+2. How do you pick, with code, if you want the asteroid to go up or down, randomly?
+3. How do you move the asteroid based on the clicks?
+

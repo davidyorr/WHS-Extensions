@@ -1,0 +1,16 @@
+{
+  "name": "Rotate It All",
+  "version": "1.0.0",
+  "description": "Rotates the entire body by pressing the RIGHT and LEFT arrow keys.",
+  "background": {
+     "persistent": true,
+     "scripts": [ "background.js" ]
+  },
+  "content_scripts": [ {
+    "all_frames": true,
+    "js": [ "content_script.js" ],
+    "matches": [ "<all_urls>" ],
+    "run_at": "document_end"
+  } ],
+  "manifest_version": 2
+}
